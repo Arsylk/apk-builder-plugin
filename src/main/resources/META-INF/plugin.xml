@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>apk-builder</id>
+    <name>Apk Builder</name>
+    <vendor email="iwaniuk.krzysztof@outlook.com" url="https://github.com/Arsylk/">Arsylk</vendor>
+
+    <description>Build android apks with gui interface to simplify deployment</description>
+
+    <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>org.jetbrains.android</depends>
+
+    <actions>
+        <group id="TestGroup.TopMenu" text="Test Group">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="action.ShowVariantsAction"
+                    class="action.ShowVariantsAction"
+                    text="Show Variants"/>
+        </group>
+    </actions>
+</idea-plugin>
